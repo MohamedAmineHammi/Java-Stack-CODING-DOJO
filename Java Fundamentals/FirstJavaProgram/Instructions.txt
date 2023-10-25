@@ -1,0 +1,17 @@
+Your Own Java Program
+''Learning Objective:
+Write your first Java program
+In this assignment, you will create your own Java program that will print your name, age, and hometown. Once you run your bytecode, you should see the following output:
+
+My name is Coding Dojo
+I am 100 years old
+My hometown is Burbank, CA
+
+1/Create a new source file inside your Java Fundamentals assignments folder
+
+2/In the main method, implement the code to print your name, age, and hometown on different lines.
+
+3/Compile your code and clear any errors, until it compiles without errors.
+
+4/Run your .class file to see the output.
+
