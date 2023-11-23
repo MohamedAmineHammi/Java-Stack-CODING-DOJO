@@ -1,5 +1,4 @@
-package com.amine.fruityloops.models;
-
+package com.amine.fruityloopsDemo.models;
 
 public class Item {
     // MEMBER VARIABLES
@@ -10,9 +9,6 @@ public class Item {
         this.name = name;
         this.price = price;
     }
-    
-    // Getters and Setters!
-
 	public String getName() {
 		return name;
 	}
@@ -26,5 +22,6 @@ public class Item {
 		this.price = price;
 	}
     
+    // As always, don't forget to generate Getters and Setters!
 }
 

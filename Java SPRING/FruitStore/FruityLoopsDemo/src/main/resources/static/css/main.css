@@ -1,0 +1,15 @@
+@charset "ISO-8859-1";
+.container {
+	margin: 40px;
+	padding: 40px;
+	font-family: sans-serif;
+	background-color: rgb(128, 0, 128);
+}
+
+h1 {
+	color: rgb(128, 0, 255);
+	margin: 5%;
+}
+.table {
+	background-color: white;
+}
