@@ -1,0 +1,26 @@
+Assignment: Display Date
+Your project manager needs you to make two templates for her front-end team: one to display the current date, and one to display the current time. Use the JSTL library to format the date so the front-end developers can edit easily!
+
+''Learning Objectives:
+Practice passing different kinds of data to the template
+Become more comfortable with routing
+Practice reading documentation & research skills to implement time formatting
+Add CSS and JavaScript to your project
+
+You can use Simple Date Format to format your date and time: SimpleDateFormat
+
+Use new java.util.Date() in your controller to get the date.
+
+Create an app that will render three pages.
+
+Render one home page as the dashboard with links to the two others.
+
+Render one page at /date with the current date formatted as Saturday, Jan 23, 2049
+
+Link an external javascript file to the /date template that alerts "This is the date template".
+
+Render one page at /time with the current time formatted as 6:26 PM
+
+Link a external javascript file to the /time template that alerts "This is the time template".
+
+Link an external CSS file that displays the links on the index page in one line and makes the date and time text blue.
