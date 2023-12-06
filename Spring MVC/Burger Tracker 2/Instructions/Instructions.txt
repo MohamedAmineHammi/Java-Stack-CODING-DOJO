@@ -1,0 +1,21 @@
+Burger Tracker 2
+Continue building out your Burger Tracker app to allow users to update their entries.
+
+''Learning Objectives:
+More practice with data binding and familiarity with using form:forms with an existing instance
+Encounter common issues when implementing update in a full-stack application
+More practice organizing render routes and POST routes
+Bonus: Practice RESTful routing by implementing a PUT route
+Note: using POST in this assignment for processing an update is also okay
+
+
+
+
+Make a task list for how to approach adding update functionality to this project.
+
+Work with at least one other student at some point while completing this assignment.
+
+Keep a list of challenging aspects and specific bugs you fixed for future reference and to help others.
+
+Implement all the features detailed in the above wireframe into your Burger Tracker project.
+
