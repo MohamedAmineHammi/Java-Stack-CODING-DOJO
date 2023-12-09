@@ -1,0 +1,23 @@
+Student Roster 1:n
+''Learning Objectives:
+Gain more experience working with one-to-many relationships
+Practice removing relationships between entities
+In this assignment, you will practice one-to-many relationships by building a Student Roster project. We will have a way to view all dorms, create dorms, create students, and place students in various dorms. Analyze the wireframe below and create the appropriate domain models with the correct relationships.
+
+Wireframe
+
+
+
+Ninja Bonus:
+Allow users to add/reassign students to the selected dorm (if a student already belongs to a dorm, add the dorm name next to the student's name in the dropdown menu)
+
+
+Display a table of all existing dormitories with the option to see the students of each dormitory
+
+Clicking on the 'Add Dorm' link should take users to a new page where they can create a new dormitory
+
+Clicking on the 'Add a new student' link should take users to a new page where they can create a new user and assign them to a dorm by using a dropdown menu
+
+Clicking on the 'See Students' link should take users to the corresponding dorm and display all students that have been assigned there
+
+Clicking 'remove' should remove the student from the selected dorm
