@@ -1,0 +1,21 @@
+Dojo Overflow Assignment
+In this assignment, you will be creating a StackOverflow / Quora clone. Users will be able to create questions, answers, and add tag subjects for the questions.
+
+''Learning Objective:
+Create an entity that uses both one-to-many and many-to-many relationships
+ERD and Wireframe
+
+
+
+
+
+
+Hint: Make use of '@RequestParam' to handle tags when creating a new question. The tags will be a String. Create a new method in your Controller to validate them, turn them into Tag objects, and assign them to the question. Existing tags should not be recreated. For example, questions one and four use the 'cs' and 'programming' tags, only one new tag (people) should be created for question four.
+
+Have the question dashboard display each question and their tags.
+
+Allow users to create questions with tags and implement validation errors.
+
+Allow users to answer questions and implement validation errors.
+
+Have the question show page display all the answers for that specific questions.
