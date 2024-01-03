@@ -1,0 +1,41 @@
+CascadeType
+''Learning Objective:
+Understand the unintended consequences of CascadeType
+When deleting an entity that is part of a one-to-one, one-to-many, or many-to-many relationship, we need to be mindful of what happens with the entity’s associations.
+
+Let’s have another look at our basketball team ERD (mascots and fans have been added to represent one-to-one and many-to-many relationships respectively).
+
+
+
+
+Now, let’s say we want to delete a team. How would we go about doing that?
+
+Your first thought may be to simply add cascade=CascadeType.ALL to each relationship, as seen in the one-to-one example with Driver and License. However, this would have unintended consequences.
+
+Using CascadeType.ALL follows each relationship and deletes all associated entities. This means that deleting a team, triggers a delete in every fan that is associated with it. It then moves on to every other team that this fan was associated with and deletes it along with its players, coaches, and mascot.
+
+
+Let’s say we have a team called Ballers. It has several players and coaches, a mascot, and a fan called Bob. Bob also likes another team, the Slammers, which has its own players, coaches, and mascot.
+
+If we use CascadeType to delete the Ballers, all Ballers players, coaches, and its mascot will also be deleted. This may be fine depending on your intentions. However, Bob will also be deleted because he is a fan of the Ballers. CascadeType will then even go to the Slammers, since Bob was associated with them and delete the team, players, coaches, the mascot, and any other fans. This could potentially delete the whole database.
+
+In order to delete a team correctly, we should detach any associations first, then delete the team and any other entities we may want to remove.
+
+@GetMapping("/teams/{id}/delete")
+public String deleteTeam(@PathVariable("id") Long id) {
+	Team team = teamService.findTeam(id);
+	for(Player player:team.getPlayers()) {
+		player.setTeam(null);
+		playerService.updatePlayer(player);
+	}
+	for(Coach coach:team.getCoaches()) {
+		coach.setTeam(null);
+		coachService.updateCoach(coach);
+	}
+	for(Fan fan:team.getFans()) {
+		fan.getTeams().remove(team);
+		fanService.updateFan(fan);
+	}
+	teamService.deleteTeam(team);
+	return "index.jsp";
+}
