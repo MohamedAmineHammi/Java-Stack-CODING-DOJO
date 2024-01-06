@@ -1,0 +1,31 @@
+h1 {
+	color: #9900FF;
+}
+
+.custom-width {
+    max-width: 60%; /* Adjust this value as needed */
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.show-width {
+	max-width: 380px;
+}
+
+.show-bg-color {
+	background-color: #9FC5F8;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed for your button */
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: 1px solid #007bff; /* Button border color */
+  border-radius: 5px; /* Rounded corners */
+  width: 100%; /* Make the anchor tag take up full width */
+}
