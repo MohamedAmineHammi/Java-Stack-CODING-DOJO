@@ -21,6 +21,13 @@
 <!-- change to match your file/naming structure -->
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/NavBar.png'); height: 40vh; background-repeat: no-repeat; background-size: cover;">
+
+
+	</nav>
+	<section class="vh-100"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/Background.jpg'); height: 100vh; background-repeat: no-repeat; background-size: cover;">
 	<div class="container">
 		<h1>Create a New Tv show</h1>
 		<form:form action="/shows/new" method="post" modelAttribute="show">
@@ -60,5 +67,6 @@
 			</table>
 		</form:form>
 	</div>
+	</section>
 </body>
 </html>

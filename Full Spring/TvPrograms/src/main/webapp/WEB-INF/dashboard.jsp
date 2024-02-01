@@ -21,6 +21,14 @@
 <!-- change to match your file/naming structure -->
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/NavBar.png'); height: 40vh; background-repeat: no-repeat; background-size: cover;">
+
+
+	</nav>
+	<section class="vh-100"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/Background.jpg'); height: 100vh; background-repeat: no-repeat; background-size: cover;">
+<div class="container text-center">
 	<div class="container">
 		<div class="d-flex justify-content-between align-items-center">
 			<h1>Welcome, ${user.name}</h1>
@@ -50,5 +58,8 @@
 		</table>
 		<a href="/shows/new" class="btn btn-primary">Add a Show</a>
 	</div>
+	</div>
+	</section>
+	
 </body>
 </html>

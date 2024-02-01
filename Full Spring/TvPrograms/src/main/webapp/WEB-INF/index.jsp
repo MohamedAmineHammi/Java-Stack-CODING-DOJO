@@ -11,15 +11,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Project Manager</title>
+    <title>TV Programs</title>
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/mains.css"> <!-- change to match your file/naming structure -->
     <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/app.js"></script><!-- change to match your file/naming structure -->
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/NavBar.png'); height: 40vh; background-repeat: no-repeat; background-size: cover;">
+
+
+	</nav>
+	<section class="vh-100"
+		style="background-image: url('https://raw.githubusercontent.com/MohamedAmineHammi/Java-Stack-CODING-DOJO/main/Full%20Spring/TvPrograms/Background.jpg'); height: 100vh; background-repeat: no-repeat; background-size: cover;">
 <div class="container text-center">
-	<h1 class="text-primary">TV Shows Database</h1>
     <div class="row">
         <div class="col-md-6">
             <h1 class="mt-4">Register</h1>
@@ -91,5 +97,6 @@
         </div>
     </div>
 </div>
+</section>
 </body>
 </html>
